@@ -6,18 +6,17 @@
     <description>Recent content on s1m0x&#39;s personal notes..</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2020 13:18:59 +0100</lastBuildDate>
     
 	<atom:link href="https://s1m0x.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Welcome</title>
-      <link>https://s1m0x.github.io/posts/welcome/</link>
-      <pubDate>Sun, 21 Jun 2020 13:18:59 +0100</pubDate>
+      <title>Posts</title>
+      <link>https://s1m0x.github.io/posts/</link>
+      <pubDate>Sun, 21 Jun 2020 15:22:28 +0100</pubDate>
       
-      <guid>https://s1m0x.github.io/posts/welcome/</guid>
-      <description>this will serve all my personal notes, thoughts and some learning curves ! using some utilities </description>
+      <guid>https://s1m0x.github.io/posts/</guid>
+      <description>post section </description>
     </item>
     
   </channel>
