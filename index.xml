@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>s1m0x&#39;s personal notes..</title>
+    <link>https://s1m0x.github.io/</link>
+    <description>Recent content on s1m0x&#39;s personal notes..</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jun 2020 13:18:59 +0100</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://s1m0x.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome</title>
-      <link>http://example.org/posts/welcome/</link>
+      <link>https://s1m0x.github.io/posts/welcome/</link>
       <pubDate>Sun, 21 Jun 2020 13:18:59 +0100</pubDate>
       
-      <guid>http://example.org/posts/welcome/</guid>
+      <guid>https://s1m0x.github.io/posts/welcome/</guid>
       <description>this will serve all my personal notes, thoughts and some learning curves ! using some utilities </description>
     </item>
     
