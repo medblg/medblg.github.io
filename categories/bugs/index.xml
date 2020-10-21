@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bugs on s1m0x</title>
+    <link>https://s1m0x.cf/categories/bugs/</link>
+    <description>Recent content in bugs on s1m0x</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Oct 2020 12:46:39 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/categories/bugs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From academic research to LFD critical vulnerability</title>
+      <link>https://s1m0x.cf/post/bugs/lfi-is-calling/</link>
+      <pubDate>Wed, 21 Oct 2020 12:46:39 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/lfi-is-calling/</guid>
+      <description>Vulnerable discovered code LFI  Intro: Three years ago, while conducting my academic research. I come accross a website to download an interresting pdf course.
+I downloaded the pdf, and as always, the nerd come back to mind whenever had the chance, even if it’s not the subject of my research. So, I tried to test the website for what it seems to me a vulnerability. And guess what? it’s a critical one.</description>
+    </item>
+    
+    <item>
+      <title>Inside a global leader in CyberSecurity [bitdefender dashboard]</title>
+      <link>https://s1m0x.cf/post/bugs/bxss-bitdefender/</link>
+      <pubDate>Sun, 26 Jan 2020 01:06:41 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/bxss-bitdefender/</guid>
+      <description>How I was able to access one of the russian antivirus (Bitdefender) domains through blind xss !</description>
+    </item>
+    
+    <item>
+      <title>Juicy Infos hidden in js scripts leads to RCE</title>
+      <link>https://s1m0x.cf/post/bugs/juicy-js-rce/</link>
+      <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/juicy-js-rce/</guid>
+      <description>Sorry for the late, I wasn’t able to write this before. Academic exams were overwhelming as usual. Now, I got some time. Let’s start the (story)! One day, while doing my research as usual, I come across a web application that I (want) to test. Just curious, you know when a website pop up and you as usual with your hacker mind spirit want to test, just a small check list will be enough (as it wasn’t your target at first place).</description>
+    </item>
+    
+  </channel>
+</rss>

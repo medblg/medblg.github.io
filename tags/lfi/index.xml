@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lfi on s1m0x</title>
+    <link>https://s1m0x.cf/tags/lfi/</link>
+    <description>Recent content in lfi on s1m0x</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Oct 2020 12:46:39 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/tags/lfi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From academic research to LFD critical vulnerability</title>
+      <link>https://s1m0x.cf/post/bugs/lfi-is-calling/</link>
+      <pubDate>Wed, 21 Oct 2020 12:46:39 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/lfi-is-calling/</guid>
+      <description>Vulnerable discovered code LFI  Intro: Three years ago, while conducting my academic research. I come accross a website to download an interresting pdf course.
+I downloaded the pdf, and as always, the nerd come back to mind whenever had the chance, even if it’s not the subject of my research. So, I tried to test the website for what it seems to me a vulnerability. And guess what? it’s a critical one.</description>
+    </item>
+    
+  </channel>
+</rss>

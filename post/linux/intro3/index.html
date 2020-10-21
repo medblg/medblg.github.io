@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+  	
+	<title>My first steps into the Linux world 3 | s1m0x</title>
+	<meta name="description" content="s1m0x notes..">
+	<meta name="author" content="s1m0x">
+	
+	<link rel="stylesheet" href="https://s1m0x.cf/css/layout.min.1ed67abd848557203b29d998267a71b67f69f33628d0cefd87a986025d3dd578.css" id="layoutCss">
+	
+	
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://s1m0x.cf/css/themes/monochrome-dark.min.ff70296d6f06dfb6b7b20ca9c5c8bea1956420c7a8682f775c0eaf8cc6a0ae05.css" id="themeCss">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<meta property="og:title" content="My first steps into the Linux world 3" />
+<meta property="og:description" content="In this article, I&#39;m describing my first steps into the linux world, and covering some definitions, as well as my experience through this nice world ! Trying to answer the second question, why I use it, and why you should too ?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://s1m0x.cf/post/linux/intro3/" />
+<meta property="og:image" content="https://s1m0x.cf/images/linux.intro1.jpeg" />
+<meta property="article:published_time" content="2019-08-28T23:10:08+01:00" />
+<meta property="article:modified_time" content="2019-08-28T23:10:08+01:00" />
+
+
+	
+</head>
+<body>
+<div class="body-container">
+
+<div class="beggin-with">
+    
+        اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، إِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ
+</div>
+<hr class="beggin-with-hr">
+<div class="header">
+    <div id="banner">
+        Just Another InfoSec Blog! Something about computers! ./s1m0x
+    </div>
+    
+    <div class="social">
+        
+            <a href="https://fb.me/simo.balghaoui" class="navbar-item is-hidden-desktop" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+        
+            <a href="https://github.com/s1m0x" class="navbar-item is-hidden-desktop" title="Github"><i class="fab fa-github fa-2x"></i></a>
+        
+    </div>
+</div>
+<hr class="separator">
+
+<div id="cont-ascii">
+    <div id="d1">
+
+         __   _            ___       
+        / /__/ |_ __ ___  / _ \__  __
+       / / __| | '_ ` _ \| | | \ \/ /
+    _ / /\__ \ | | | | | | |_| |>  &lt;           
+   (_)_/ |___/_|_| |_| |_|\___//_/\_\
+
+    </div>
+    <div id="d2">
+        <nav>
+            
+            
+                <a href="/about" class="navbar-item">|About|</a>
+            
+            
+            
+                <a href="/" class="navbar-item">|Posts|</a>
+            
+            
+            
+                <a href="/categories" class="navbar-item">|Categories|</a>
+            
+                
+        </nav>    
+    </div>
+    <div id="d3">
+        <br><br>
+        <p>Something about CTFs,Writeups and some technical stuff,notes...and of course general productivity topics :)</p>
+    </div>
+
+  </div>
+
+
+
+<script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
+
+	<main>
+		<article class="sing">
+			<h1 class="title">My first steps into the Linux world 3</h1>
+			<time>28 August 2019 23:19 Wednesday</time>
+			<br><br>
+			<div class="single-content">
+				<h3 id="what-is-the-best-linux-distro-and-for-what">What is the best Linux distro and for what?</h3>
+<p>It’s a <code>Linux myth question</code>, though the response can easily find its way from the question. What are you willing to do with ? It’s really depends on what would be your engagement towards the OS (the uses). Are you using it just for daily browsing. For games, Programming and development stuff. Staring without doing anything ? Why not, it could be :)</p>
+<p>The laptop hardware specifications, old architecture, new one’s with performances… . All that should be considered when choosing your distro. I cannot tell you what you want, but I can ensure you that you will find your way with Linux as a freedom human right project.</p>
+<p>I will describe my first impressions, and will go with distros being used through this year, and how getting used to go with Linux in general.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">PS: I’m still learning, technologies are always in development. So, keep in mind that no one get it from the first time, persistent is the key to success.
+</code></pre></div><p>Well, I firstly installed my Linux distro on virtual machine. It was a distribution called <code>kali Linux</code> made by and for <code>penetration testing</code> purposes, security researchers know what I mean… .(As nowadays called <code>Hackers</code> for which I don’t appreciate the misused term, because people don’t distinguish between <code>black hat Hackers…</code> . Some additional lectures should be done here.) I messed up, as I cannot go through professional things without at least having some knowledge on that. That was my <code>learning philosophy</code>. I was 14 year-old. So wouldn’t give it a try now, because I can screw up with other things on the Windows OS. So, uninstalled the <code>virtual machine</code>. And forgot about Linux. It wasn’t in my to-learn list ! ^_^ .</p>
+<p>As I grew up with the (Internet Community), some interests go here, and therefore curious Linux came back to me, and after a brief lecture about Operation System. I got the courage to go through, and re-test it. Installing Ubuntu on virtual machine, just for my studies. Not looking around very much, but, I didn’t like it. I downloaded Linux Mint instead, reading the manual (I Wil refer back to this later, Under the <code>RTFM</code> :) .).</p>
+<p>Installing my first linux distro on <code>dual boot</code> with windows (as I can use both systems). It’s good advice for newcomers to begin with. At first on virtual machine. But for me, It wasn’t the case. I knew if I had it, even on dual boot, I would choose Windows as I had already known lot of things there. So, when using it as dual, most of the times, I’m booting into Windows unintentionally EHH!. It’s the truth, the mind like to keep you inside your comfort zone, and thus away from learning new dirty complexe things. So, no learning was going here at all.
+Finally, with a brave decision, decided to start using Linux as the main distro on my Laptop.</p>
+<h3 id="distros-">Distros :</h3>
+<h5 id="linux-mint-">Linux Mint :</h5>
+<p>Linux Mint with Cinnamon Desktop was my first distro. When I firstly logged in, I have the idea to change the mint logo.. The <code>splash screen</code>.. So searching, executing commands in terminal. Lot of digging when facing other problems. Someone could say what the big deal on that? Why bother yourself changing the logo?. It’s curiosity, without hesitations, in seconds I got my image at the splash screen (that loads when system starts).</p>
+<p>This is the fun when using Linux, you <code>solve problems</code>. You encounter lot of them if you mess with your system, and that what I recommend you all to do. So you learn by doing. But how to resolve them, and ask Google, DuckDuckGo, yahoo, bing… all these search engines the right question is what matters. Huge community, lot of questions. And of course solutions. You learn how to search for the right information, when and where to look for it. You wouldn’t be able to learn if you aren’t curious. You feel that this button shouldn’t be there, and search how to edit config files, and what program handles that button… and so on. My learning was like that, and I keep doing it as far as I go with Linux. Everything is customizing, look for your comfort, and learn from others.</p>
+<h5 id="debian-">Debian :</h5>
+<p>I have tested Debian distro, the core of some other distros as Ubuntu, Linux Mint…(Ubuntu itself is based on Debian). I have got some problems with the installation, it couldn’t recognize my wifi driver (<code>iwlwifi</code>). I installed then the LXLE.</p>
+<h5 id="lxle-">LXLE :</h5>
+<p>A distro with a desktop environment based on Lubuntu (extends from Ubuntu, but with <code>LXDE</code> Desktop Environment) a <code>lightweight distro</code> (a keyword that I used in many occasions while searching) meant to revive old Personal Computer and old hardware. I forgot to mention that everything that you see in Linux is a program, even the window manager, or the look that you are staring to, so everything is customizable. You are free to install different looks (Desktop Environment, Window Manager).</p>
+<h5 id="crunchbang-c-and-helium-bunsenlabs-">Crunchbang C++ and Helium Bunsenlabs :</h5>
+<p>I have tested also the Crunchbang C++, its alternatives and successor the Bunsenlabs, runs smoothly with less ram. It doesn’t have a full desktop environment, just a <code>Window Manager(WM)</code> suffice to get everything work fine. But it’s not <code>friendly-distro</code> for beginners, It requires some knowledge on editing config files,,, . But I enjoyed using it, I have been able to customize almost everything on the distro… .</p>
+<h5 id="manjaro-">Manjaro :</h5>
+<p>It’s one of the distros based on <code>Archlinux</code> a <code>rolling</code> release distro, always running the last updated packages, known also with its Package Manager called <code>pacman</code>. Sincerely I didn’t go with Archlinux core installation as it seems to be <code>more quite complexe</code>. But the Arch’s Wiki keeps thing very intuitive, the community is really huge, and are there for helping. <code>RTFM</code> is another thing to lookup after ^_^. See RTFM section later.</p>
+<h5 id="deepin-os-">Deepin OS :</h5>
+<p>Another distro tested, was deepin os, I cannot tell a lot about this, because I like it very much, even more than others. Especially its <code>App Center</code>, really, really you got every package (software) you want. Looks fancy with dock, everything is great on this one. Perfect, but not for old hardware, it could be <code>heavy</code> !</p>
+<h5 id="kubuntu-">Kubuntu :</h5>
+<p>I used Kubuntu, extends also from Ubuntu, but this one used the KDE desktop environment, it has its place, with all the effects. I liked the woobly window effect so much. I did my second year engineering project on that distro, and liked the productivity.</p>
+<h5 id="peppermint-">Peppermint :</h5>
+<p>I recently installed peppermint, really good with <code>xfce DE</code>, fast enough to get the work done. it’s on the list of lightweight distro. it wouldn’t take too much memory, at least starts with 3XXmb. and when desktop fully used, the ram can reach its 1.XXGB easily, but keeps software running smoothly.</p>
+<h5 id="elive-os-306-">Elive OS 3.0.6 :</h5>
+<p>Can’t tell too much about it. Really good, with first impressions with its <code>Enlightenment Desktop Environment</code>, fast, smooth and configurable OS. I didn’t know till now why I left it? May be packages !</p>
+<h5 id="pop-os-">PoP! OS :</h5>
+<p>I installed PoP! OS with its <code>gnome desktop</code>, I wasn’t fun with the gnome desktop at all. but just to try what can be done with this one. It shows that it takes more memory, so it wouldn’t fit my desire for speed, saying efficiency for more reliability.</p>
+<h5 id="linux-mint-with-xfce-as-de-">Linux Mint with xfce as DE :</h5>
+<p>Currently running the Linux Mint Tina with <code>xfce4 desktop</code>, I really enjoy the look, and the feeling inside xfce when just turning back from gnome. What a sensation, running 3xx megabit of ram is deadly good, you can easily customize everything,</p>
+<p>I think I will stick to this distro, as it is based on Ubuntu, and got most of my favorite packages. With its <code>LTS (Long Term Support)</code> that goes till 5 years from 2018 (because it’s based on Ubuntu 18 LTS). So, I will be using it until April 2023. I’m not changing to any distro until the 5 years of support get done. of course updates, and upgrades are necessary. Except if changing the OS to macOS (the unix-like to unix).</p>
+<h3 id="rtfm-">RTFM :</h3>
+<p>Before I finish the story, I would like to explain in brief what’s <code>RTFM</code>, it is important to know and act on that.
+RTFM stands for <code>Read The F*cking Manual</code> :) , Sorry for the offensive one, but the importance is obvious haha. Reading manuals are not really a such of wasting time as you may think, but rather than causing problems and search for hints on WWW, you could easily avoid them by <code>understanding how things work</code>. Or, sometimes you may encounter basics issues, that were asked before and marked as resolved, you might refer then to the <code>FAQ (Frequently Asked Questions)</code> to get answers. That’s it in short, more you read more you understood what behind. So, reading can gives you what you are looking for, and <code>The quieter you become, the more you are able to hear</code>.</p>
+<p>Now focusing on the real work. Enough spending hours from distro to another. Perfection has its dark side though. This was my little, still short story about Linux, without diving into details.</p>
+<p>Thanks for spending time reading this, you caught my attention if you finished these words. I wish you to try something different, developing good attitude, and remember with persistence and ambitions everything should work better. S.BLG</p>
+<h3 id="resources-">Resources :</h3>
+<ul>
+<li>
+<p>Youtube channels:
+#<a href="https://www.youtube.com/user/homergfunk">Chris Titus Tech</a>
+#<a href="https://www.youtube.com/channel/UCZiL6BoryLWxyapUuVYW27g">Average Linux User</a>
+#<a href="https://www.youtube.com/channel/UCS25Y-2DUke9uOU5OtLwwgg">Linux Tex</a>
+#<a href="https://www.youtube.com/channel/UCVls1GmFKf6WlTraIb_IaJg">DistroTube</a>
+#<a href="https://www.youtube.com/channel/UCoryWpk4QVYKFCJul9KBdyw">Switched to Linux</a>
+#<a href="https://www.youtube.com/user/JtheLinuxguy">LearnLinux.tv</a>
+#<a href="https://www.youtube.com/channel/UC5HhHXVDrGb30QwN0FTXBJw">Make Tech Easier</a></p>
+</li>
+<li>
+<p>Websites:</p>
+</li>
+</ul>
+
+
+<div class="custom-table">
+<table>
+<tr><td>https://techfoss.net</td></tr>
+<tr><td>https://stackexchange.com</td></tr>
+<tr><td>https://stackoverflow.com/</td></tr>
+<tr><td>https://wiki.archlinux.org/</td></tr>
+<tr><td>https://askubuntu.com/</td></tr>
+<tr><td>https://wiki.ubuntu.com/</td></tr>
+<tr><td>https://www.webopedia.com/TERM/K/kernel.html</td></tr>
+<tr><td>https://en.wikipedia.org/wiki/Linux_kernel</td></tr>
+</table>
+</div>
+
+
+			
+
+				<div class="tags">
+						
+						<a class="tag" href="/tags/lnx_intro">#lnx_intro</a>
+					
+				</div>
+				<br>
+			</div>
+
+			
+		</article>
+	</main>
+<aside>
+<div class="latest-posts">
+    <h3 style="text-align: center;">
+        Category: 
+        
+        <a class="cat" href="/categories/linux">
+            linux
+        </a>
+        
+    </h3>
+    <ul>
+        
+            
+            
+       <table>
+            
+            
+             
+        <tr>
+            <th><li><span>Next</span>: </th><td><a href="https://s1m0x.cf/post/linux/automate-bash-jq/">Automating some stuff with jq and bash</a></li></td>
+            
+        </tr>
+            
+            
+            
+        <tr>
+            <th><li><span>Previous</span>: </th><td><a href="https://s1m0x.cf/post/linux/intro2/">My first steps into the Linux world 2</a></li></td>
+            
+        </tr>
+            
+            
+            
+        </table>
+
+    </ul>
+</div>
+</aside>
+
+<br>
+<footer>
+    <p><span>Made with &lt;3 by Mohamed aka (s1m0x)</span></p>
+        
+</footer>
+<br>
+</div>
+</body>
+</html>

@@ -1,22 +1,84 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>s1m0x&#39;s personal notes..</title>
-    <link>https://s1m0x.github.io/</link>
-    <description>Recent content on s1m0x&#39;s personal notes..</description>
+    <title>s1m0x</title>
+    <link>https://s1m0x.cf/</link>
+    <description>Recent content on s1m0x</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    
-	<atom:link href="https://s1m0x.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 21 Oct 2020 12:46:39 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From academic research to LFD critical vulnerability</title>
+      <link>https://s1m0x.cf/post/bugs/lfi-is-calling/</link>
+      <pubDate>Wed, 21 Oct 2020 12:46:39 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/lfi-is-calling/</guid>
+      <description>Vulnerable discovered code LFI  Intro: Three years ago, while conducting my academic research. I come accross a website to download an interresting pdf course.
+I downloaded the pdf, and as always, the nerd come back to mind whenever had the chance, even if it’s not the subject of my research. So, I tried to test the website for what it seems to me a vulnerability. And guess what? it’s a critical one.</description>
+    </item>
     
     <item>
-      <title>Posts</title>
-      <link>https://s1m0x.github.io/posts/</link>
-      <pubDate>Sun, 21 Jun 2020 15:22:28 +0100</pubDate>
+      <title>About Me</title>
+      <link>https://s1m0x.cf/about/</link>
+      <pubDate>Mon, 28 Sep 2020 09:16:08 +0100</pubDate>
       
-      <guid>https://s1m0x.github.io/posts/</guid>
-      <description>post section </description>
+      <guid>https://s1m0x.cf/about/</guid>
+      <description>$ Whoami Hi, my name is Mohamed BAL-GHAUI, I&amp;rsquo;m Biomedical Engineer a HIT field that uses more and more modern technologies to solve and improve patient life. I&amp;rsquo;m also an InfoSec enthusiast.
+This blog is live so that I can share with you(with me ;) my experiences. This is primary dedicated for InfoSec world, especially Web Applications. There will be writeups about some of my findings(bugs I had found) either in private/public programs and some takeaway with that.</description>
+    </item>
+    
+    <item>
+      <title>Automating some stuff with jq and bash</title>
+      <link>https://s1m0x.cf/post/linux/automate-bash-jq/</link>
+      <pubDate>Sun, 19 Apr 2020 16:04:39 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/automate-bash-jq/</guid>
+      <description>Intro: Hi, It has been a while since my last story. This one isn’t going to tell anything special about infosec, in fact nothing with that topic in here. I will be presenting how I managed to automate a task with a malformed json data, especially updating repetitive values for the same key. Let’s start: I won’t go through fundamentals, but some specific parameters will be mentioned here. Yesterday, I got some json data that was like this:</description>
+    </item>
+    
+    <item>
+      <title>Inside a global leader in CyberSecurity [bitdefender dashboard]</title>
+      <link>https://s1m0x.cf/post/bugs/bxss-bitdefender/</link>
+      <pubDate>Sun, 26 Jan 2020 01:06:41 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/bxss-bitdefender/</guid>
+      <description>How I was able to access one of the russian antivirus (Bitdefender) domains through blind xss !</description>
+    </item>
+    
+    <item>
+      <title>My first steps into the Linux world 3</title>
+      <link>https://s1m0x.cf/post/linux/intro3/</link>
+      <pubDate>Wed, 28 Aug 2019 23:10:08 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/intro3/</guid>
+      <description>What is the best Linux distro and for what? It’s a Linux myth question, though the response can easily find its way from the question. What are you willing to do with ? It’s really depends on what would be your engagement towards the OS (the uses). Are you using it just for daily browsing. For games, Programming and development stuff. Staring without doing anything ? Why not, it could be :)</description>
+    </item>
+    
+    <item>
+      <title>My first steps into the Linux world 2</title>
+      <link>https://s1m0x.cf/post/linux/intro2/</link>
+      <pubDate>Wed, 28 Aug 2019 23:09:08 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/intro2/</guid>
+      <description>Why I use Linux ? It’s a great question. Almost every colleagues, friends that had chance to see me work with, keep asking why use it instead of Windows ?. Why getting things complexes ?. To be honest, it’s a matter of taste and how things should be done. (I have no problem with Windows, except security concern). For me I was experiencing Microsoft Windows since the XP version at the age of 11 year-old.</description>
+    </item>
+    
+    <item>
+      <title>My first steps into the Linux world 1</title>
+      <link>https://s1m0x.cf/post/linux/intro/</link>
+      <pubDate>Wed, 28 Aug 2019 23:08:08 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/intro/</guid>
+      <description>Tux Logo  Intro: Hello, I wish I found you all well. I’m gonna to make some notes about my experience with Linux, it has been till now almost one year using it officially. A powerful operation system. I had always the idea to learn something new, different to increase in somehow creativity, and efficiency. This write up will be divided into three sections, in which I will describe my learning curve with Linux, and of course other stuff as well without digging into details to avoid overwhelming the reader.</description>
+    </item>
+    
+    <item>
+      <title>Juicy Infos hidden in js scripts leads to RCE</title>
+      <link>https://s1m0x.cf/post/bugs/juicy-js-rce/</link>
+      <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/juicy-js-rce/</guid>
+      <description>Sorry for the late, I wasn’t able to write this before. Academic exams were overwhelming as usual. Now, I got some time. Let’s start the (story)! One day, while doing my research as usual, I come across a web application that I (want) to test. Just curious, you know when a website pop up and you as usual with your hacker mind spirit want to test, just a small check list will be enough (as it wasn’t your target at first place).</description>
     </item>
     
   </channel>

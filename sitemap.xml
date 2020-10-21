@@ -3,20 +3,143 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://s1m0x.github.io/posts/</loc>
-    <lastmod>2020-06-21T15:22:28+01:00</lastmod>
+    <loc>https://s1m0x.cf/categories/bugs/</loc>
+    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://s1m0x.github.io/categories/</loc>
+    <loc>https://s1m0x.cf/categories/</loc>
+    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://s1m0x.github.io/</loc>
+    <loc>https://s1m0x.cf/post/bugs/lfi-is-calling/</loc>
+    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://s1m0x.github.io/tags/</loc>
+    <loc>https://s1m0x.cf/tags/lfi/</loc>
+    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/php_sec/</loc>
+    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/</loc>
+    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/</loc>
+    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/about/</loc>
+    <lastmod>2020-09-28T09:16:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/bugs/</loc>
+    <lastmod>2020-09-27T21:42:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/challenges/</loc>
+    <lastmod>2020-09-27T21:42:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/devs/</loc>
+    <lastmod>2020-09-27T21:42:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/linux/</loc>
+    <lastmod>2020-09-27T21:42:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/</loc>
+    <lastmod>2020-09-27T21:42:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/linux/automate-bash-jq/</loc>
+    <lastmod>2020-04-19T16:04:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/bash/</loc>
+    <lastmod>2020-04-19T16:04:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/jq/</loc>
+    <lastmod>2020-04-19T16:04:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/categories/linux/</loc>
+    <lastmod>2020-04-19T16:04:39+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/bxss/</loc>
+    <lastmod>2020-01-26T01:06:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/bugs/bxss-bitdefender/</loc>
+    <lastmod>2020-01-26T01:06:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/session-hijacking/</loc>
+    <lastmod>2020-01-26T01:06:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/lnx_intro/</loc>
+    <lastmod>2019-08-28T23:10:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/linux/intro3/</loc>
+    <lastmod>2019-08-28T23:10:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/linux/intro2/</loc>
+    <lastmod>2019-08-28T23:09:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/linux/intro/</loc>
+    <lastmod>2019-08-28T23:08:08+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/ato/</loc>
+    <lastmod>2019-01-19T08:00:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/js/</loc>
+    <lastmod>2019-01-19T08:00:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/bugs/juicy-js-rce/</loc>
+    <lastmod>2019-01-19T08:00:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/rce/</loc>
+    <lastmod>2019-01-19T08:00:44+01:00</lastmod>
   </url>
   
 </urlset>

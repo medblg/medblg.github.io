@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on s1m0x</title>
+    <link>https://s1m0x.cf/categories/linux/</link>
+    <description>Recent content in linux on s1m0x</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 16:04:39 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating some stuff with jq and bash</title>
+      <link>https://s1m0x.cf/post/linux/automate-bash-jq/</link>
+      <pubDate>Sun, 19 Apr 2020 16:04:39 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/automate-bash-jq/</guid>
+      <description>Intro: Hi, It has been a while since my last story. This one isn’t going to tell anything special about infosec, in fact nothing with that topic in here. I will be presenting how I managed to automate a task with a malformed json data, especially updating repetitive values for the same key. Let’s start: I won’t go through fundamentals, but some specific parameters will be mentioned here. Yesterday, I got some json data that was like this:</description>
+    </item>
+    
+    <item>
+      <title>My first steps into the Linux world 3</title>
+      <link>https://s1m0x.cf/post/linux/intro3/</link>
+      <pubDate>Wed, 28 Aug 2019 23:10:08 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/intro3/</guid>
+      <description>What is the best Linux distro and for what? It’s a Linux myth question, though the response can easily find its way from the question. What are you willing to do with ? It’s really depends on what would be your engagement towards the OS (the uses). Are you using it just for daily browsing. For games, Programming and development stuff. Staring without doing anything ? Why not, it could be :)</description>
+    </item>
+    
+    <item>
+      <title>My first steps into the Linux world 2</title>
+      <link>https://s1m0x.cf/post/linux/intro2/</link>
+      <pubDate>Wed, 28 Aug 2019 23:09:08 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/intro2/</guid>
+      <description>Why I use Linux ? It’s a great question. Almost every colleagues, friends that had chance to see me work with, keep asking why use it instead of Windows ?. Why getting things complexes ?. To be honest, it’s a matter of taste and how things should be done. (I have no problem with Windows, except security concern). For me I was experiencing Microsoft Windows since the XP version at the age of 11 year-old.</description>
+    </item>
+    
+    <item>
+      <title>My first steps into the Linux world 1</title>
+      <link>https://s1m0x.cf/post/linux/intro/</link>
+      <pubDate>Wed, 28 Aug 2019 23:08:08 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/linux/intro/</guid>
+      <description>Tux Logo  Intro: Hello, I wish I found you all well. I’m gonna to make some notes about my experience with Linux, it has been till now almost one year using it officially. A powerful operation system. I had always the idea to learn something new, different to increase in somehow creativity, and efficiency. This write up will be divided into three sections, in which I will describe my learning curve with Linux, and of course other stuff as well without digging into details to avoid overwhelming the reader.</description>
+    </item>
+    
+  </channel>
+</rss>
