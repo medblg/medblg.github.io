@@ -6,7 +6,25 @@
     <description>Recent content in Tags on s1m0x</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2020 12:46:39 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cve</title>
+      <link>https://s1m0x.cf/tags/cve/</link>
+      <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/tags/cve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rce</title>
+      <link>https://s1m0x.cf/tags/rce/</link>
+      <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/tags/rce/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>lfi</title>
       <link>https://s1m0x.cf/tags/lfi/</link>
@@ -85,15 +103,6 @@
       <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
       
       <guid>https://s1m0x.cf/tags/js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rce</title>
-      <link>https://s1m0x.cf/tags/rce/</link>
-      <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
-      
-      <guid>https://s1m0x.cf/tags/rce/</guid>
       <description></description>
     </item>
     

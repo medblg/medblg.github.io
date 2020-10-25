@@ -6,7 +6,18 @@
     <description>Recent content on s1m0x</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Oct 2020 12:46:39 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Struts your way into Strongkey [Rce]</title>
+      <link>https://s1m0x.cf/post/bugs/strongkey-rce/</link>
+      <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
+      
+      <guid>https://s1m0x.cf/post/bugs/strongkey-rce/</guid>
+      <description>Intro: Back to Feb 1, 2020 at 5:53PM, I reported a critical vulnerability issue that gives me a remote code execution(RCE) on StrongKey company. To those who don&amp;rsquo;t know, StrongAuth, or StrongKey is a security based company that &amp;ldquo;makes data breach irrelevant, with StrongKey technology, your data becomes worthless to hackers&amp;rdquo; as stated on their website !.
+About the company by CyberDb : 
+StrongAuth, Inc. is a Silicon Valley company focused on Symmetric Key Management, Encryption, Tokenization and PKI and FIDO-based Strong-Authentication.</description>
+    </item>
+    
     <item>
       <title>From academic research to LFD critical vulnerability</title>
       <link>https://s1m0x.cf/post/bugs/lfi-is-calling/</link>
@@ -23,7 +34,7 @@ I downloaded the pdf, and as always, the nerd come back to mind whenever had the
       <pubDate>Mon, 28 Sep 2020 09:16:08 +0100</pubDate>
       
       <guid>https://s1m0x.cf/about/</guid>
-      <description>$ Whoami Hi, my name is Mohamed BAL-GHAUI, I&amp;rsquo;m Biomedical Engineer a HIT field that uses more and more modern technologies to solve and improve patient life. I&amp;rsquo;m also an InfoSec enthusiast.
+      <description>$ Whoami Hi, my name is Mohamed BAL-GHAUI, I&amp;rsquo;m a Biomedical Engineer a HIT field that uses more and more modern technologies to solve and improve patient life. I&amp;rsquo;m also an InfoSec enthusiast.
 This blog is live so that I can share with you(with me ;) my experiences. This is primary dedicated for InfoSec world, especially Web Applications. There will be writeups about some of my findings(bugs I had found) either in private/public programs and some takeaway with that.</description>
     </item>
     

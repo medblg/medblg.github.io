@@ -4,12 +4,37 @@
   
   <url>
     <loc>https://s1m0x.cf/categories/bugs/</loc>
-    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
+    <lastmod>2020-10-25T16:38:07+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://s1m0x.cf/categories/</loc>
-    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
+    <lastmod>2020-10-25T16:38:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/cve/</loc>
+    <lastmod>2020-10-25T16:38:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/rce/</loc>
+    <lastmod>2020-10-25T16:38:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/</loc>
+    <lastmod>2020-10-25T16:38:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/post/bugs/strongkey-rce/</loc>
+    <lastmod>2020-10-25T16:38:07+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://s1m0x.cf/tags/</loc>
+    <lastmod>2020-10-25T16:38:07+01:00</lastmod>
   </url>
   
   <url>
@@ -24,16 +49,6 @@
   
   <url>
     <loc>https://s1m0x.cf/tags/php_sec/</loc>
-    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s1m0x.cf/</loc>
-    <lastmod>2020-10-21T12:46:39+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s1m0x.cf/tags/</loc>
     <lastmod>2020-10-21T12:46:39+01:00</lastmod>
   </url>
   
@@ -134,11 +149,6 @@
   
   <url>
     <loc>https://s1m0x.cf/post/bugs/juicy-js-rce/</loc>
-    <lastmod>2019-01-19T08:00:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://s1m0x.cf/tags/rce/</loc>
     <lastmod>2019-01-19T08:00:44+01:00</lastmod>
   </url>
   

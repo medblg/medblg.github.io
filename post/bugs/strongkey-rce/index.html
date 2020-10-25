@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+  	
+	<title>Struts your way into Strongkey [Rce] | s1m0x</title>
+	<meta name="description" content="s1m0x notes..">
+	<meta name="author" content="s1m0x">
+	
+	<link rel="stylesheet" href="https://s1m0x.cf/css/layout.min.1ed67abd848557203b29d998267a71b67f69f33628d0cefd87a986025d3dd578.css" id="layoutCss">
+	
+	
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://s1m0x.cf/css/themes/monochrome-dark.min.bca1e7ca50cf3d0b6f029a912bb50665cb1ffb29fb1190dc7a7a57d852474191.css" id="themeCss">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<meta property="og:title" content="Struts your way into Strongkey [Rce]" />
+<meta property="og:description" content="Here&#39;s how I could pwned StrongKey, while exploiting an already released patch CVE. And this is why it&#39;s important to keep your component updated !" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://s1m0x.cf/post/bugs/strongkey-rce/" />
+<meta property="og:image" content="https://s1m0x.cf/images/c3Ryb25na2V5LXJjZQo=.png" />
+<meta property="article:published_time" content="2020-10-25T16:38:07+01:00" />
+<meta property="article:modified_time" content="2020-10-25T16:38:07+01:00" />
+
+
+	
+</head>
+<body>
+<div class="body-container">
+
+<div class="beggin-with">
+    
+        اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، إِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ
+</div>
+<hr class="beggin-with-hr">
+<div class="header">
+    <div id="banner">
+        Just Another InfoSec Blog! Something about computers! ./s1m0x
+    </div>
+    
+    <div class="social">
+        
+            <a href="https://fb.me/simo.balghaoui" class="navbar-item is-hidden-desktop" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+        
+            <a href="https://github.com/s1m0x" class="navbar-item is-hidden-desktop" title="Github"><i class="fab fa-github fa-2x"></i></a>
+        
+    </div>
+</div>
+<hr class="separator">
+
+<div id="cont-ascii">
+    <div id="d1">
+
+         __   _            ___       
+        / /__/ |_ __ ___  / _ \__  __
+       / / __| | '_ ` _ \| | | \ \/ /
+    _ / /\__ \ | | | | | | |_| |>  &lt;           
+   (_)_/ |___/_|_| |_| |_|\___//_/\_\
+
+    </div>
+    <div id="d2">
+        <nav>
+            
+            
+                <a href="/about" class="navbar-item">|About|</a>
+            
+            
+            
+                <a href="/" class="navbar-item">|Posts|</a>
+            
+            
+            
+                <a href="/categories" class="navbar-item">|Categories|</a>
+            
+                
+        </nav>    
+    </div>
+    <div id="d3">
+        <br><br>
+        <p>Something about CTFs,Writeups and some technical stuff,notes...and of course general productivity topics :)</p>
+    </div>
+
+  </div>
+
+
+
+<script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
+
+	<main>
+		<article class="sing">
+			<h1 class="title">Struts your way into Strongkey [Rce]</h1>
+			<time>Oct. 25, 2020</time>
+			<br><br>
+			<div class="single-content">
+				<figure>
+<img class="featured_img" src="/images/c3Ryb25na2V5LXJjZQo=.png" width="600px" height="200px"/> </figure>
+<h3 id="intro">Intro:</h3>
+<p>Back to Feb 1, 2020 at 5:53PM, I reported a critical vulnerability issue that gives me a remote code execution(RCE) on StrongKey company.
+To those who don&rsquo;t know, StrongAuth, or StrongKey is a security based company that &ldquo;makes data breach irrelevant, with StrongKey technology, your data becomes worthless to hackers&rdquo; as stated on their website !.</p>
+<p>About the company by <a href="https://www.cyberdb.co/vendor/strongauthinc/">CyberDb</a> : <blockquote class="custom-quotes" style="padding: 0.01em 16px;">
+<div class="qtext" style="border-left: 6px solid #ccc!important;margin-top: 16px;
+margin-bottom: 16px; padding-left: 14px;">
+    <p><i class="fa fa-quote-right" style="font-size:36px!important"></i><br>
+    <i style="font-family: serif;font-style: italic;font-size:16px">StrongAuth, Inc. is a Silicon Valley company focused on Symmetric Key Management, Encryption, Tokenization and PKI and FIDO-based Strong-Authentication. StrongAuth has defined a unique web-application architecture – Regulatory Compliant Cloud Computing (RC3) – which enables secure cloud-computing while complying with data-security regulations anywhere in the world.</i></p>
+</div>
+</blockquote>
+
+</p>
+<p>Enough speaking !</p>
+<h3 id="spotting-the-vulnerability">Spotting the vulnerability:</h3>
+<p>As usual, conducting my research and don&rsquo;t know how the strongAuth web app kicks my browser, clicked around found myself into <code>partner</code> subdomain. Quick look at the url, I recognized the extension <code>.action</code>, directly went to test for the Struts CVE-2017-563, as I already seen that pattern from some reads I did before.</p>
+<h3 id="exploitation">Exploitation:</h3>
+<p>I grabbed the public exploit <a href="https://www.exploit-db.com/exploits/41570">41570</a> and did a quick check, and okey I was in !</p>
+<p>Here is my PoC:
+<figure>
+    <img class="featured_img" src="/images/c3Ryb25na2V5LXJjZQo1=.jpeg" width="800px" height="40px"/> 
+        <figcaption style="margin-top:10px;font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif;color: rgba(117, 117, 117, 1);">
+        RCE
+        </figcaption></figure></p>
+<h3 id="notes">Notes:</h3>
+<ul>
+<li>Keep your eyes in recent CVES, reverse them if no public exploit exists, and always keep a good reads habit.</li>
+<li>No matter what company&rsquo;s size, there will be always some flaws here and there.</li>
+<li>Even if the main company&rsquo;s mission is protection, they missed out to patch the bug before. And breaches comes from here !</li>
+</ul>
+
+			
+
+				<div class="tags">
+						
+						<a class="tag" href="/tags/rce">#rce</a>
+						
+						<a class="tag" href="/tags/cve">#cve</a>
+					
+				</div>
+				<br>
+			</div>
+
+			
+		</article>
+	</main>
+<aside>
+<div class="latest-posts">
+    <h3 style="text-align: center;">
+        Category: 
+        
+        <a class="cat" href="/categories/bugs">
+            bugs
+        </a>
+        
+    </h3>
+    <ul>
+        
+            
+            
+       <table>
+            
+            
+            
+        <tr>
+            <th><li><span>Previous</span>: </th><td><a href="https://s1m0x.cf/post/bugs/lfi-is-calling/">From academic research to LFD critical vulnerability</a></li></td>
+            
+        </tr>
+            
+            
+            
+        </table>
+
+    </ul>
+</div>
+</aside>
+
+<br>
+<footer>
+    <p><span>Made with &lt;3 by Mohamed aka (s1m0x)</span></p>
+        
+</footer>
+<br>
+</div>
+</body>
+</html>
