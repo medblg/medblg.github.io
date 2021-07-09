@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on s1m0x</title>
-    <link>https://s1m0x.cf/tags/</link>
+    <link>https://s1m0x.xyz/tags/</link>
     <description>Recent content in Tags on s1m0x</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cve</title>
-      <link>https://s1m0x.cf/tags/cve/</link>
+      <link>https://s1m0x.xyz/tags/cve/</link>
       <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/cve/</guid>
+      <guid>https://s1m0x.xyz/tags/cve/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rce</title>
-      <link>https://s1m0x.cf/tags/rce/</link>
+      <link>https://s1m0x.xyz/tags/rce/</link>
       <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/rce/</guid>
+      <guid>https://s1m0x.xyz/tags/rce/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lfi</title>
-      <link>https://s1m0x.cf/tags/lfi/</link>
+      <link>https://s1m0x.xyz/tags/lfi/</link>
       <pubDate>Wed, 21 Oct 2020 12:46:39 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/lfi/</guid>
+      <guid>https://s1m0x.xyz/tags/lfi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>php_sec</title>
-      <link>https://s1m0x.cf/tags/php_sec/</link>
+      <link>https://s1m0x.xyz/tags/php_sec/</link>
       <pubDate>Wed, 21 Oct 2020 12:46:39 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/php_sec/</guid>
+      <guid>https://s1m0x.xyz/tags/php_sec/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bash</title>
-      <link>https://s1m0x.cf/tags/bash/</link>
+      <link>https://s1m0x.xyz/tags/bash/</link>
       <pubDate>Sun, 19 Apr 2020 16:04:39 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/bash/</guid>
+      <guid>https://s1m0x.xyz/tags/bash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jq</title>
-      <link>https://s1m0x.cf/tags/jq/</link>
+      <link>https://s1m0x.xyz/tags/jq/</link>
       <pubDate>Sun, 19 Apr 2020 16:04:39 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/jq/</guid>
+      <guid>https://s1m0x.xyz/tags/jq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bxss</title>
-      <link>https://s1m0x.cf/tags/bxss/</link>
+      <link>https://s1m0x.xyz/tags/bxss/</link>
       <pubDate>Sun, 26 Jan 2020 01:06:41 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/bxss/</guid>
+      <guid>https://s1m0x.xyz/tags/bxss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>session-hijacking</title>
-      <link>https://s1m0x.cf/tags/session-hijacking/</link>
+      <link>https://s1m0x.xyz/tags/session-hijacking/</link>
       <pubDate>Sun, 26 Jan 2020 01:06:41 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/session-hijacking/</guid>
+      <guid>https://s1m0x.xyz/tags/session-hijacking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lnx_intro</title>
-      <link>https://s1m0x.cf/tags/lnx_intro/</link>
+      <link>https://s1m0x.xyz/tags/lnx_intro/</link>
       <pubDate>Wed, 28 Aug 2019 23:10:08 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/lnx_intro/</guid>
+      <guid>https://s1m0x.xyz/tags/lnx_intro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ato</title>
-      <link>https://s1m0x.cf/tags/ato/</link>
+      <link>https://s1m0x.xyz/tags/ato/</link>
       <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/ato/</guid>
+      <guid>https://s1m0x.xyz/tags/ato/</guid>
       <description></description>
     </item>
     
     <item>
       <title>js</title>
-      <link>https://s1m0x.cf/tags/js/</link>
+      <link>https://s1m0x.xyz/tags/js/</link>
       <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/tags/js/</guid>
+      <guid>https://s1m0x.xyz/tags/js/</guid>
       <description></description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rce on s1m0x</title>
-    <link>https://s1m0x.cf/tags/rce/</link>
+    <link>https://s1m0x.xyz/tags/rce/</link>
     <description>Recent content in rce on s1m0x</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://s1m0x.cf/tags/rce/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/tags/rce/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Struts your way into Strongkey [RCE]</title>
-      <link>https://s1m0x.cf/post/bugs/strongkey-rce/</link>
+      <link>https://s1m0x.xyz/post/bugs/strongkey-rce/</link>
       <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/post/bugs/strongkey-rce/</guid>
+      <guid>https://s1m0x.xyz/post/bugs/strongkey-rce/</guid>
       <description>Intro: Back to Feb 1, 2020 at 5:53PM, I reported a critical vulnerability issue that gives me a remote code execution(RCE) on StrongKey company. To those who don&amp;rsquo;t know, StrongAuth, or StrongKey is a security based company that &amp;ldquo;makes data breach irrelevant, with StrongKey technology, your data becomes worthless to hackers&amp;rdquo; as stated on their website !.
 About the company by CyberDb : 
 StrongAuth, Inc. is a Silicon Valley company focused on Symmetric Key Management, Encryption, Tokenization and PKI and FIDO-based Strong-Authentication.</description>
@@ -20,10 +20,10 @@ StrongAuth, Inc. is a Silicon Valley company focused on Symmetric Key Management
     
     <item>
       <title>Juicy Infos hidden in js scripts leads to RCE</title>
-      <link>https://s1m0x.cf/post/bugs/juicy-js-rce/</link>
+      <link>https://s1m0x.xyz/post/bugs/juicy-js-rce/</link>
       <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
       
-      <guid>https://s1m0x.cf/post/bugs/juicy-js-rce/</guid>
+      <guid>https://s1m0x.xyz/post/bugs/juicy-js-rce/</guid>
       <description>Sorry for the late, I wasn’t able to write this before. Academic exams were overwhelming as usual. Now, I got some time. Let’s start the (story)! One day, while doing my research as usual, I come across a web application that I (want) to test. Just curious, you know when a website pop up and you as usual with your hacker mind spirit want to test, just a small check list will be enough (as it wasn’t your target at first place).</description>
     </item>
     
