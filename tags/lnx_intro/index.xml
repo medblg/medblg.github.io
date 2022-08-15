@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lnx_intro on s1m0x</title>
+    <title>lnx_intro on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
     <link>https://s1m0x.xyz/tags/lnx_intro/</link>
-    <description>Recent content in lnx_intro on s1m0x</description>
+    <description>Recent content in lnx_intro on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Aug 2019 23:10:08 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/tags/lnx_intro/index.xml" rel="self" type="application/rss+xml" />
@@ -31,7 +31,7 @@
       <pubDate>Wed, 28 Aug 2019 23:08:08 +0100</pubDate>
       
       <guid>https://s1m0x.xyz/post/linux/intro/</guid>
-      <description>Tux Logo  Intro: Hello, I wish I found you all well. I’m gonna to make some notes about my experience with Linux, it has been till now almost one year using it officially. A powerful operation system. I had always the idea to learn something new, different to increase in somehow creativity, and efficiency. This write up will be divided into three sections, in which I will describe my learning curve with Linux, and of course other stuff as well without digging into details to avoid overwhelming the reader.</description>
+      <description>Tux Logo Intro: Hello, I wish I found you all well. I’m gonna to make some notes about my experience with Linux, it has been till now almost one year using it officially. A powerful operation system. I had always the idea to learn something new, different to increase in somehow creativity, and efficiency. This write up will be divided into three sections, in which I will describe my learning curve with Linux, and of course other stuff as well without digging into details to avoid overwhelming the reader.</description>
     </item>
     
   </channel>

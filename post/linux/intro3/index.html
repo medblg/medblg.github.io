@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-  	
-	<title>My first steps into the Linux world 3 | s1m0x</title>
-	<meta name="description" content="s1m0x notes..">
-	<meta name="author" content="s1m0x">
-	
-	<link rel="stylesheet" href="https://s1m0x.xyz/css/layout.min.1ed67abd848557203b29d998267a71b67f69f33628d0cefd87a986025d3dd578.css" id="layoutCss">
-	
-	
-	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://s1m0x.xyz/css/themes/monochrome-dark.min.bca1e7ca50cf3d0b6f029a912bb50665cb1ffb29fb1190dc7a7a57d852474191.css" id="themeCss">
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	
-	<meta property="og:title" content="My first steps into the Linux world 3" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first steps into the Linux world 3 | s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <meta property="og:title" content="My first steps into the Linux world 3" />
 <meta property="og:description" content="In this article, I&#39;m describing my first steps into the linux world, and covering some definitions, as well as my experience through this nice world ! Trying to answer the second question, why I use it, and why you should too ?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://s1m0x.xyz/post/linux/intro3/" />
@@ -31,94 +22,53 @@
 <meta property="article:published_time" content="2019-08-28T23:10:08+01:00" />
 <meta property="article:modified_time" content="2019-08-28T23:10:08+01:00" />
 
-	
-</head>
-<body>
-<div class="body-container">
+  </head>
 
-<div class="beggin-with">
+  <body>
     
-        اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، إِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>  
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/about">About</a></li>
+      
+      <li><a href="/">Posts</a></li>
+      
+      <li><a href="/categories">Categories</a></li>
+      
+      <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+
+    <ul class="menu">
+    
+      <li><a href="https://fb.me/simo.balghaoui"><i class="fab fa-facebook"></i></a></li>
+
+      <li><a href="https://github.com/s1m0x"><i class="fab fa-github"></i></a></li>
+
+      <li><a href="https://ma.linkedin.com/in/mohamed-bal-ghaoui-b67ab1128"><i class="fab fa-linkedin-in"></i></a></li>
+
+    </ul>
+    
+    </div>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">My first steps into the Linux world 3</span></h1>
+
+<h2 class="date">Aug. 28, 2019</h2>
 </div>
-<hr class="beggin-with-hr">
-<div class="header">
-    <div id="banner">
-        Just Another InfoSec Blog! Something about computers! ./s1m0x
-    </div>
-    
-    <div class="social">
-        
-            <a href="https://fb.me/simo.balghaoui" class="navbar-item is-hidden-desktop" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-        
-            <a href="https://github.com/s1m0x" class="navbar-item is-hidden-desktop" title="Github"><i class="fab fa-github fa-2x"></i></a>
-        
-    </div>
-</div>
-<hr class="separator">
 
-<div id="cont-ascii">
-    <div id="d1">
-
-         __   _            ___       
-        / /__/ |_ __ ___  / _ \__  __
-       / / __| | '_ ` _ \| | | \ \/ /
-    _ / /\__ \ | | | | | | |_| |>  &lt;           
-   (_)_/ |___/_|_| |_| |_|\___//_/\_\
-
-    </div>
-    <div id="d2">
-        <nav>
-            
-            
-                <a href="/about" class="navbar-item">|About|</a>
-            
-            
-            
-                <a href="/" class="navbar-item">|Posts|</a>
-            
-            
-            
-                <a href="/categories" class="navbar-item">|Categories|</a>
-            
-                
-        </nav>    
-    </div>
-    <div id="d3">
-        <br><br>
-        <p>Something about CTFs,Writeups and some technical stuff,notes...and of course general productivity topics :)</p>
-    </div>
-
-  </div>
-
-
-
-<script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</script>
-
-	<main>
-		<article class="sing">
-			<h1 class="title">My first steps into the Linux world 3</h1>
-			<time>Aug. 28, 2019</time>
-			<br><br>
-			<div class="single-content">
-				<h3 id="what-is-the-best-linux-distro-and-for-what">What is the best Linux distro and for what?</h3>
+<main>
+<h3 id="what-is-the-best-linux-distro-and-for-what">What is the best Linux distro and for what?</h3>
 <p>It’s a <code>Linux myth question</code>, though the response can easily find its way from the question. What are you willing to do with ? It’s really depends on what would be your engagement towards the OS (the uses). Are you using it just for daily browsing. For games, Programming and development stuff. Staring without doing anything ? Why not, it could be :)</p>
 <p>The laptop hardware specifications, old architecture, new one’s with performances… . All that should be considered when choosing your distro. I cannot tell you what you want, but I can ensure you that you will find your way with Linux as a freedom human right project.</p>
 <p>I will describe my first impressions, and will go with distros being used through this year, and how getting used to go with Linux in general.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">PS: I’m still learning, technologies are always in development. So, keep in mind that no one get it from the first time, persistent is the key to success.
-</code></pre></div><p>Well, I firstly installed my Linux distro on virtual machine. It was a distribution called <code>kali Linux</code> made by and for <code>penetration testing</code> purposes, security researchers know what I mean… .(As nowadays called <code>Hackers</code> for which I don’t appreciate the misused term, because people don’t distinguish between <code>black hat Hackers…</code> . Some additional lectures should be done here.) I messed up, as I cannot go through professional things without at least having some knowledge on that. That was my <code>learning philosophy</code>. I was 14 year-old. So wouldn’t give it a try now, because I can screw up with other things on the Windows OS. So, uninstalled the <code>virtual machine</code>. And forgot about Linux. It wasn’t in my to-learn list ! ^_^ .</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>PS: I’m still learning, technologies are always in development. So, keep in mind that no one get it from the first time, persistent is the key to success.
+</span></span></code></pre></div><p>Well, I firstly installed my Linux distro on virtual machine. It was a distribution called <code>kali Linux</code> made by and for <code>penetration testing</code> purposes, security researchers know what I mean… .(As nowadays called <code>Hackers</code> for which I don’t appreciate the misused term, because people don’t distinguish between <code>black hat Hackers…</code> . Some additional lectures should be done here.) I messed up, as I cannot go through professional things without at least having some knowledge on that. That was my <code>learning philosophy</code>. I was 14 year-old. So wouldn’t give it a try now, because I can screw up with other things on the Windows OS. So, uninstalled the <code>virtual machine</code>. And forgot about Linux. It wasn’t in my to-learn list ! ^_^ .</p>
 <p>As I grew up with the (Internet Community), some interests go here, and therefore curious Linux came back to me, and after a brief lecture about Operation System. I got the courage to go through, and re-test it. Installing Ubuntu on virtual machine, just for my studies. Not looking around very much, but, I didn’t like it. I downloaded Linux Mint instead, reading the manual (I Wil refer back to this later, Under the <code>RTFM</code> :) .).</p>
 <p>Installing my first linux distro on <code>dual boot</code> with windows (as I can use both systems). It’s good advice for newcomers to begin with. At first on virtual machine. But for me, It wasn’t the case. I knew if I had it, even on dual boot, I would choose Windows as I had already known lot of things there. So, when using it as dual, most of the times, I’m booting into Windows unintentionally EHH!. It’s the truth, the mind like to keep you inside your comfort zone, and thus away from learning new dirty complexe things. So, no learning was going here at all.
 Finally, with a brave decision, decided to start using Linux as the main distro on my Laptop.</p>
@@ -184,19 +134,10 @@ RTFM stands for <code>Read The F*cking Manual</code> :) , Sorry for the offensiv
 </div>
 
 
-			
+	
+<a class="tag" href="/tags/lnx_intro">#lnx_intro</a>
 
-				<div class="tags">
-						
-						<a class="tag" href="/tags/lnx_intro">#lnx_intro</a>
-					
-				</div>
-				<br>
-			</div>
-
-			
-		</article>
-	</main>
+</main>
 <aside>
 <div class="latest-posts">
     <h3 style="text-align: center;">
@@ -216,14 +157,14 @@ RTFM stands for <code>Read The F*cking Manual</code> :) , Sorry for the offensiv
             
              
         <tr>
-            <th><li><span>Next</span>: </th><td><a href="https://s1m0x.xyz/post/linux/automate-bash-jq/">Automating some stuff with jq and bash</a></li></td>
+            <th><li style="list-style: none;"><span>Next</span>: </th><td><a href="https://s1m0x.xyz/post/linux/automate-bash-jq/">Automating some stuff with jq and bash</a></li></td>
             
         </tr>
             
             
             
         <tr>
-            <th><li><span>Previous</span>: </th><td><a href="https://s1m0x.xyz/post/linux/intro2/">My first steps into the Linux world 2</a></li></td>
+            <th><li style="list-style: none;"><span>Previous</span>: </th><td><a href="https://s1m0x.xyz/post/linux/intro2/">My first steps into the Linux world 2</a></li></td>
             
         </tr>
             
@@ -234,13 +175,21 @@ RTFM stands for <code>Read The F*cking Manual</code> :) , Sorry for the offensiv
     </ul>
 </div>
 </aside>
+  <footer>
+  
+  
+  </footer>
+  <script>
+    
+    window.onscroll = function() {myFunction()};
 
-<br>
-<footer>
-    <p><span>Made with &lt;3 by Mohamed aka (s1m0x)</span></p>
-        
-</footer>
-<br>
-</div>
-</body>
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
+  </body>
 </html>
+

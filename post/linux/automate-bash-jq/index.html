@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-  	
-	<title>Automating some stuff with jq and bash | s1m0x</title>
-	<meta name="description" content="s1m0x notes..">
-	<meta name="author" content="s1m0x">
-	
-	<link rel="stylesheet" href="https://s1m0x.xyz/css/layout.min.1ed67abd848557203b29d998267a71b67f69f33628d0cefd87a986025d3dd578.css" id="layoutCss">
-	
-	
-	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://s1m0x.xyz/css/themes/monochrome-dark.min.bca1e7ca50cf3d0b6f029a912bb50665cb1ffb29fb1190dc7a7a57d852474191.css" id="themeCss">
-	
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	
-	<meta property="og:title" content="Automating some stuff with jq and bash" />
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automating some stuff with jq and bash | s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <meta property="og:title" content="Automating some stuff with jq and bash" />
 <meta property="og:description" content="This is how I managed to solve a processing problem of a hudge json blob data, combining jq, and bash !" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://s1m0x.xyz/post/linux/automate-bash-jq/" />
@@ -31,89 +22,48 @@
 <meta property="article:published_time" content="2020-04-19T16:04:39+01:00" />
 <meta property="article:modified_time" content="2020-04-19T16:04:39+01:00" />
 
-	
-</head>
-<body>
-<div class="body-container">
+  </head>
 
-<div class="beggin-with">
+  <body>
     
-        اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، إِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>  
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/about">About</a></li>
+      
+      <li><a href="/">Posts</a></li>
+      
+      <li><a href="/categories">Categories</a></li>
+      
+      <li><a href="/tags">Tags</a></li>
+      
+    </ul>
+
+    <ul class="menu">
+    
+      <li><a href="https://fb.me/simo.balghaoui"><i class="fab fa-facebook"></i></a></li>
+
+      <li><a href="https://github.com/s1m0x"><i class="fab fa-github"></i></a></li>
+
+      <li><a href="https://ma.linkedin.com/in/mohamed-bal-ghaoui-b67ab1128"><i class="fab fa-linkedin-in"></i></a></li>
+
+    </ul>
+    
+    </div>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Automating some stuff with jq and bash</span></h1>
+
+<h2 class="date">Apr. 19, 2020</h2>
 </div>
-<hr class="beggin-with-hr">
-<div class="header">
-    <div id="banner">
-        Just Another InfoSec Blog! Something about computers! ./s1m0x
-    </div>
-    
-    <div class="social">
-        
-            <a href="https://fb.me/simo.balghaoui" class="navbar-item is-hidden-desktop" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-        
-            <a href="https://github.com/s1m0x" class="navbar-item is-hidden-desktop" title="Github"><i class="fab fa-github fa-2x"></i></a>
-        
-    </div>
-</div>
-<hr class="separator">
 
-<div id="cont-ascii">
-    <div id="d1">
-
-         __   _            ___       
-        / /__/ |_ __ ___  / _ \__  __
-       / / __| | '_ ` _ \| | | \ \/ /
-    _ / /\__ \ | | | | | | |_| |>  &lt;           
-   (_)_/ |___/_|_| |_| |_|\___//_/\_\
-
-    </div>
-    <div id="d2">
-        <nav>
-            
-            
-                <a href="/about" class="navbar-item">|About|</a>
-            
-            
-            
-                <a href="/" class="navbar-item">|Posts|</a>
-            
-            
-            
-                <a href="/categories" class="navbar-item">|Categories|</a>
-            
-                
-        </nav>    
-    </div>
-    <div id="d3">
-        <br><br>
-        <p>Something about CTFs,Writeups and some technical stuff,notes...and of course general productivity topics :)</p>
-    </div>
-
-  </div>
-
-
-
-<script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</script>
-
-	<main>
-		<article class="sing">
-			<h1 class="title">Automating some stuff with jq and bash</h1>
-			<time>Apr. 19, 2020</time>
-			<br><br>
-			<div class="single-content">
-				<figure>
+<main>
+<figure>
 <img class="featured_img" src="/images/YXV0b21hdGUtYmFzaC1qcQo=.png" width="600px" height="300px"/> </figure>
 <h3 id="intro">Intro:</h3>
 <p>Hi, It has been a while since my last story. This one isn’t going to tell anything special about infosec, in fact nothing with that topic in here. I will be presenting how I managed to automate a task with a <code>malformed json data</code>, especially updating <code>repetitive values</code> for the <code>same key</code>.
@@ -122,46 +72,46 @@ Yesterday, I got some json data that was like this:</p>
 <ul>
 <li>JSON Data :</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
-<span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;30&#34;</span>,
-<span style="color:#f1fa8c">&#34;key2&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;random value..&#34;</span>,
-<span style="color:#f1fa8c">&#34;key3&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;searched value1&#34;</span> 
-},
-{
-<span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;31&#34;</span>,
-<span style="color:#f1fa8c">&#34;key2&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;random value..&#34;</span>,
-<span style="color:#f1fa8c">&#34;key3&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;searched value3&#34;</span>
-},
-…
-…
-</code></pre></div><p>The snippet above describes some json objects. When processing them directly with jq a lightweight json processor. See <strong>refs</strong>. We got into some errors. As neither it was a well constructed objects nor a complete array. So, using the basic <code>.</code> <em>jq filter</em> to list the data throws errors.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat data | jq <span style="color:#f1fa8c">&#39;.&#39;</span>
-</code></pre></div><p>Initially with the above command we would print a pretty formatted json.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;30&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;key2&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;random value..&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;key3&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;searched value1&#34;</span> 
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;id&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;31&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;key2&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;random value..&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">&#34;key3&#34;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;searched value3&#34;</span>
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span>…
+</span></span><span style="display:flex;"><span>…
+</span></span></code></pre></div><p>The snippet above describes some json objects. When processing them directly with jq a lightweight json processor. See <strong>refs</strong>. We got into some errors. As neither it was a well constructed objects nor a complete array. So, using the basic <code>.</code> <em>jq filter</em> to list the data throws errors.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data | jq <span style="color:#f1fa8c">&#39;.&#39;</span>
+</span></span></code></pre></div><p>Initially with the above command we would print a pretty formatted json.
 but instead we hit the following parser error :
 <strong>parse error: Expected value before ‘,’ at line 5, column 10</strong></p>
 <h3 id="solve-issue-1">Solve issue 1:</h3>
 <p>Digging more in documentation and json structure, decided to use it as arrays of object, so adding square brackets <code>[]</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">[
-..our data
-{
-...
-}
-]
-</code></pre></div><p>With that the filter above works great. So will now extract all <strong>key3 values</strong>. We need to list what inside the array first, then filter only all keys we were interested in. Consider using the following filter:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat data | jq <span style="color:#f1fa8c">&#39;.[].key3&#39;</span>
-</code></pre></div><p>All <strong>key3 values</strong> would be printed in between double quotes. So, using <code>-r</code> switch to have only raw values. so combining with something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat data | jq -r <span style="color:#f1fa8c">&#39;.[].key3&#39;</span>
-</code></pre></div><p>We got now our values, we could manipulate them the way you prefer, however for me, I have to replace these with some specific ones. So <strong>searched value1</strong> will be for instance <strong>testing1</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>..our data
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>With that the filter above works great. So will now extract all <strong>key3 values</strong>. We need to list what inside the array first, then filter only all keys we were interested in. Consider using the following filter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data | jq <span style="color:#f1fa8c">&#39;.[].key3&#39;</span>
+</span></span></code></pre></div><p>All <strong>key3 values</strong> would be printed in between double quotes. So, using <code>-r</code> switch to have only raw values. so combining with something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data | jq -r <span style="color:#f1fa8c">&#39;.[].key3&#39;</span>
+</span></span></code></pre></div><p>We got now our values, we could manipulate them the way you prefer, however for me, I have to replace these with some specific ones. So <strong>searched value1</strong> will be for instance <strong>testing1</strong>.</p>
 <h4 id="recap">Recap:</h4>
 <p>Untill now I had extracted all key3 values, save them into file let’s name it <strong>values.txt</strong>. Got new file with the replacement values within <strong>newValues.txt</strong>.</p>
 <h3 id="resolve-issue-2">Resolve issue 2:</h3>
 <p>I need to replace now all the key3 values in data with those from <strong>newValues.txt</strong>.</p>
 <p>After some search I didn’t find something interesting, but got some hints about using the select filter. Let’s say you want to search a specific value within a specific object. We need to select from all the objects the key that matches our identifier <code>id</code>. So, basically the following code would render our first object:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat data | jq <span style="color:#f1fa8c">&#39;.[] | select(.id==&#34;30&#34;)&#39;</span>
-</code></pre></div><p>The idea now is to update the key3 value filtered within the current object. To make this happen I would simply pipe it into another jq with the following : <code>jq '.key3=&quot;newValue1&quot;'</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data | jq <span style="color:#f1fa8c">&#39;.[] | select(.id==&#34;30&#34;)&#39;</span>
+</span></span></code></pre></div><p>The idea now is to update the key3 value filtered within the current object. To make this happen I would simply pipe it into another jq with the following : <code>jq '.key3=&quot;newValue1&quot;'</code>.</p>
 <p>Combining the two: extract the object, update the value :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat data | jq <span style="color:#f1fa8c">&#39;.[] | select(.id==&#34;30&#34;)&#39;</span> | jq <span style="color:#f1fa8c">&#39;.key3=&#34;newValue1&#34;&#39;</span>
-</code></pre></div><h3 id="resolve-issue-3">Resolve issue 3:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data | jq <span style="color:#f1fa8c">&#39;.[] | select(.id==&#34;30&#34;)&#39;</span> | jq <span style="color:#f1fa8c">&#39;.key3=&#34;newValue1&#34;&#39;</span>
+</span></span></code></pre></div><h3 id="resolve-issue-3">Resolve issue 3:</h3>
 <p>This is enough for one value, but what about other values in newValues.txt the idea is clear we need to loop into those with some scripting. I prefer since I’m in linux to use bash. So, the idea is :</p>
 <ul>
 <li>Read line by line the new values from newValues.txt</li>
@@ -169,51 +119,42 @@ but instead we hit the following parser error :
 <li>Passing each line as argument to update the key3 value.</li>
 </ul>
 <p>Basic while loop reading line by line values from <strong>newValues.txt</strong> would do the job:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">while</span> <span style="color:#8be9fd;font-style:italic">IFS</span><span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">read</span> -r myline;
-<span style="color:#ff79c6">do</span> 
-     ...MAGIC HERE...
-<span style="color:#ff79c6">done</span> &lt; newValues.txt
-</code></pre></div><p>To loop through all objects by <code>id</code> I have created a global variable named <code>idv</code> with the first object id value. So, idv initially will get <code>idv=30</code> . This will be passed as argument to <em>jq select filter</em>. And we should increment its value as it passes through objects one by one.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">while</span> <span style="color:#8be9fd;font-style:italic">IFS</span><span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">read</span> -r myline;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">do</span> 
+</span></span><span style="display:flex;"><span>     ...MAGIC HERE...
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">done</span> &lt; newValues.txt
+</span></span></code></pre></div><p>To loop through all objects by <code>id</code> I have created a global variable named <code>idv</code> with the first object id value. So, idv initially will get <code>idv=30</code> . This will be passed as argument to <em>jq select filter</em>. And we should increment its value as it passes through objects one by one.</p>
 <p>The syntax is this : <code>jq --arg argname value '...filtersHere'</code>, so we would have something as below:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat data | jq --arg <span style="color:#8be9fd;font-style:italic">test</span> <span style="color:#8be9fd;font-style:italic">$idv</span> <span style="color:#f1fa8c">&#39;.[] | select(.id==$test)&#39;</span>
-</code></pre></div><p>jq argument takes value from our variable <strong>$idv</strong>, with the same logic, we can use values from inside <strong>newValues.txt</strong>. The syntax would be:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">jq --arg val <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$myline</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">&#39;.key3=$val&#39;</span>
-</code></pre></div><h4 id="note">Note:</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data | jq --arg <span style="color:#8be9fd;font-style:italic">test</span> <span style="color:#8be9fd;font-style:italic">$idv</span> <span style="color:#f1fa8c">&#39;.[] | select(.id==$test)&#39;</span>
+</span></span></code></pre></div><p>jq argument takes value from our variable <strong>$idv</strong>, with the same logic, we can use values from inside <strong>newValues.txt</strong>. The syntax would be:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jq --arg val <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$myline</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">&#39;.key3=$val&#39;</span>
+</span></span></code></pre></div><h4 id="note">Note:</h4>
 <p>The double quotes in <code>$myline</code>, makes it act as literal string, as we don’t know how they are formatted.</p>
 <p>The magic line is :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat data | jq --arg <span style="color:#8be9fd;font-style:italic">test</span> <span style="color:#8be9fd;font-style:italic">$idv</span> <span style="color:#f1fa8c">&#39;.[] | select(.id==$test)&#39;</span> | jq --arg val <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$myline</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">&#39;.key=$val&#39;</span> | tee -a NewData
-</code></pre></div><h3 id="final-result-our-wrapper">Final result: (our wrapper)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data | jq --arg <span style="color:#8be9fd;font-style:italic">test</span> <span style="color:#8be9fd;font-style:italic">$idv</span> <span style="color:#f1fa8c">&#39;.[] | select(.id==$test)&#39;</span> | jq --arg val <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$myline</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">&#39;.key=$val&#39;</span> | tee -a NewData
+</span></span></code></pre></div><h3 id="final-result-our-wrapper">Final result: (our wrapper)</h3>
 <p>The resulting script is : <code>simo.sh</code> (didn&rsquo;t find the appealing name for this)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">#! /bin/bash
-</span><span style="color:#ff79c6"></span><span style="color:#8be9fd;font-style:italic">idv</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">30</span>
-myfunction<span style="color:#ff79c6">(){</span>
-<span style="color:#ff79c6">while</span> <span style="color:#8be9fd;font-style:italic">IFS</span><span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">read</span> -r myline;
-<span style="color:#ff79c6">do</span> 
-     cat data | jq --arg <span style="color:#8be9fd;font-style:italic">test</span> <span style="color:#8be9fd;font-style:italic">$idv</span> <span style="color:#f1fa8c">&#39;.[] | select(.id==$test)&#39;</span> <span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span>              | jq --arg val <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$myline</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">&#39;.key=$val&#39;</span> <span style="color:#f1fa8c">\
-</span><span style="color:#f1fa8c"></span>              | tee -a NewData
-     <span style="color:#8be9fd;font-style:italic">idv</span><span style="color:#ff79c6">=</span><span style="color:#ff79c6">$((</span>idv+1<span style="color:#ff79c6">))</span>
-<span style="color:#ff79c6">done</span> &lt; newValues.txt
-<span style="color:#ff79c6">}</span>
-myfunction
-</code></pre></div><h5 id="refs">Refs:</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ff79c6">#! /bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#ff79c6"></span><span style="color:#8be9fd;font-style:italic">idv</span><span style="color:#ff79c6">=</span><span style="color:#bd93f9">30</span>
+</span></span><span style="display:flex;"><span>myfunction<span style="color:#ff79c6">(){</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">while</span> <span style="color:#8be9fd;font-style:italic">IFS</span><span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">read</span> -r myline;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">do</span> 
+</span></span><span style="display:flex;"><span>     cat data | jq --arg <span style="color:#8be9fd;font-style:italic">test</span> <span style="color:#8be9fd;font-style:italic">$idv</span> <span style="color:#f1fa8c">&#39;.[] | select(.id==$test)&#39;</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>              | jq --arg val <span style="color:#f1fa8c">&#34;</span><span style="color:#8be9fd;font-style:italic">$myline</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#f1fa8c">&#39;.key=$val&#39;</span> <span style="color:#f1fa8c">\
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>              | tee -a NewData
+</span></span><span style="display:flex;"><span>     <span style="color:#8be9fd;font-style:italic">idv</span><span style="color:#ff79c6">=</span><span style="color:#ff79c6">$((</span>idv+1<span style="color:#ff79c6">))</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">done</span> &lt; newValues.txt
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">}</span>
+</span></span><span style="display:flex;"><span>myfunction
+</span></span></code></pre></div><h5 id="refs">Refs:</h5>
 <p><a href="https://stedolan.github.io/jq/">jq documentation</a></p>
 
-			
+	
+<a class="tag" href="/tags/jq">#jq</a>
+	
+<a class="tag" href="/tags/bash">#bash</a>
 
-				<div class="tags">
-						
-						<a class="tag" href="/tags/jq">#jq</a>
-						
-						<a class="tag" href="/tags/bash">#bash</a>
-					
-				</div>
-				<br>
-			</div>
-
-			
-		</article>
-	</main>
+</main>
 <aside>
 <div class="latest-posts">
     <h3 style="text-align: center;">
@@ -233,7 +174,7 @@ myfunction
             
             
         <tr>
-            <th><li><span>Previous</span>: </th><td><a href="https://s1m0x.xyz/post/linux/intro3/">My first steps into the Linux world 3</a></li></td>
+            <th><li style="list-style: none;"><span>Previous</span>: </th><td><a href="https://s1m0x.xyz/post/linux/intro3/">My first steps into the Linux world 3</a></li></td>
             
         </tr>
             
@@ -244,13 +185,21 @@ myfunction
     </ul>
 </div>
 </aside>
+  <footer>
+  
+  
+  </footer>
+  <script>
+    
+    window.onscroll = function() {myFunction()};
 
-<br>
-<footer>
-    <p><span>Made with &lt;3 by Mohamed aka (s1m0x)</span></p>
-        
-</footer>
-<br>
-</div>
-</body>
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
+  </body>
 </html>
+
