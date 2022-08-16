@@ -22,6 +22,10 @@ hr {
   color: #ddd;
 }
 
+#social-links li a {
+  background: none;
+}
+
 /* code */
 pre {
   border: 1px solid #ddd;
@@ -121,5 +125,9 @@ article.sum h1.title {
 }
 
 div.pages {
+  text-align: center;
+}
+
+figure figcaption {
   text-align: center;
 }

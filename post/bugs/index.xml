@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Sep 2020 21:42:43 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/post/bugs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Fear the EAR Vuln</title>
+      <link>https://s1m0x.xyz/post/bugs/fear-the-ear/</link>
+      <pubDate>Mon, 15 Aug 2022 23:15:11 +0100</pubDate>
+      
+      <guid>https://s1m0x.xyz/post/bugs/fear-the-ear/</guid>
+      <description>Intro: It has been a while since my last blog post, and here we go again. This one will cover a vulnerability I discovered and reported back in April to a private program in HackerOne which I cannot disclose the name, but it is a well known insurance company in the USA.
+In short I have not set and prepare for this finding as I am so busy recently with my full time job, nevertheless I spend some of my spare time on my hobby, including research.</description>
+    </item>
+    
+    <item>
       <title>Struts your way into Strongkey [RCE]</title>
       <link>https://s1m0x.xyz/post/bugs/strongkey-rce/</link>
       <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
