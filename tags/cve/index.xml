@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cve on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
-    <link>https://s1m0x.xyz/tags/cve/</link>
-    <description>Recent content in cve on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</description>
+    <title>cve on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <link>https://medblg.top/tags/cve/</link>
+    <description>Recent content in cve on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/tags/cve/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 16:38:07 +0100</lastBuildDate><atom:link href="https://medblg.top/tags/cve/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Struts your way into Strongkey [RCE]</title>
-      <link>https://s1m0x.xyz/post/bugs/strongkey-rce/</link>
+      <link>https://medblg.top/post/bugs/strongkey-rce/</link>
       <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/strongkey-rce/</guid>
+      <guid>https://medblg.top/post/bugs/strongkey-rce/</guid>
       <description>Intro: Back to Feb 1, 2020 at 5:53PM, I reported a critical vulnerability issue that gives me a remote code execution(RCE) on StrongKey company. To those who don&amp;rsquo;t know, StrongAuth, or StrongKey is a security based company that &amp;ldquo;makes data breach irrelevant, with StrongKey technology, your data becomes worthless to hackers&amp;rdquo; as stated on their website !.
 About the company by CyberDb : StrongAuth, Inc. is a Silicon Valley company focused on Symmetric Key Management, Encryption, Tokenization and PKI and FIDO-based Strong-Authentication.</description>
     </item>

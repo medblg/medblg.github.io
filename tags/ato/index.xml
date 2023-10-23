@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ato on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
-    <link>https://s1m0x.xyz/tags/ato/</link>
-    <description>Recent content in ato on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</description>
+    <title>ato on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <link>https://medblg.top/tags/ato/</link>
+    <description>Recent content in ato on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jan 2019 08:00:44 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/tags/ato/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Jan 2019 08:00:44 +0100</lastBuildDate><atom:link href="https://medblg.top/tags/ato/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Juicy Infos hidden in js scripts leads to RCE</title>
-      <link>https://s1m0x.xyz/post/bugs/juicy-js-rce/</link>
+      <link>https://medblg.top/post/bugs/juicy-js-rce/</link>
       <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/juicy-js-rce/</guid>
+      <guid>https://medblg.top/post/bugs/juicy-js-rce/</guid>
       <description>Sorry for the late, I wasn’t able to write this before. Academic exams were overwhelming as usual. Now, I got some time. Let’s start the (story)! One day, while doing my research as usual, I come across a web application that I (want) to test. Just curious, you know when a website pop up and you as usual with your hacker mind spirit want to test, just a small check list will be enough (as it wasn’t your target at first place).</description>
     </item>
     

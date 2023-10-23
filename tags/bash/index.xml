@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bash on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
-    <link>https://s1m0x.xyz/tags/bash/</link>
-    <description>Recent content in bash on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</description>
+    <title>bash on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <link>https://medblg.top/tags/bash/</link>
+    <description>Recent content in bash on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 16:04:39 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 16:04:39 +0100</lastBuildDate><atom:link href="https://medblg.top/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automating some stuff with jq and bash</title>
-      <link>https://s1m0x.xyz/post/linux/automate-bash-jq/</link>
+      <link>https://medblg.top/post/linux/automate-bash-jq/</link>
       <pubDate>Sun, 19 Apr 2020 16:04:39 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/linux/automate-bash-jq/</guid>
+      <guid>https://medblg.top/post/linux/automate-bash-jq/</guid>
       <description>Intro: Hi, It has been a while since my last story. This one isn’t going to tell anything special about infosec, in fact nothing with that topic in here. I will be presenting how I managed to automate a task with a malformed json data, especially updating repetitive values for the same key. Let’s start: I won’t go through fundamentals, but some specific parameters will be mentioned here. Yesterday, I got some json data that was like this:</description>
     </item>
     

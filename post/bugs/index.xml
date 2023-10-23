@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bugs Section on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
-    <link>https://s1m0x.xyz/post/bugs/</link>
-    <description>Recent content in Bugs Section on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</description>
+    <title>Bugs Section on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <link>https://medblg.top/post/bugs/</link>
+    <description>Recent content in Bugs Section on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Sep 2020 21:42:43 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/post/bugs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Sep 2020 21:42:43 +0100</lastBuildDate><atom:link href="https://medblg.top/post/bugs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fear the EAR Vuln</title>
-      <link>https://s1m0x.xyz/post/bugs/fear-the-ear/</link>
+      <link>https://medblg.top/post/bugs/fear-the-ear/</link>
       <pubDate>Mon, 15 Aug 2022 23:15:11 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/fear-the-ear/</guid>
+      <guid>https://medblg.top/post/bugs/fear-the-ear/</guid>
       <description>Intro: It has been a while since my last blog post, and here we go again. This one will cover a vulnerability I discovered and reported back in April to a private program in HackerOne which I cannot disclose the name, but it is a well known insurance company in the USA.
 In short I have not set and prepare for this finding as I am so busy recently with my full time job, nevertheless I spend some of my spare time on my hobby, including research.</description>
     </item>
     
     <item>
       <title>Struts your way into Strongkey [RCE]</title>
-      <link>https://s1m0x.xyz/post/bugs/strongkey-rce/</link>
+      <link>https://medblg.top/post/bugs/strongkey-rce/</link>
       <pubDate>Sun, 25 Oct 2020 16:38:07 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/strongkey-rce/</guid>
+      <guid>https://medblg.top/post/bugs/strongkey-rce/</guid>
       <description>Intro: Back to Feb 1, 2020 at 5:53PM, I reported a critical vulnerability issue that gives me a remote code execution(RCE) on StrongKey company. To those who don&amp;rsquo;t know, StrongAuth, or StrongKey is a security based company that &amp;ldquo;makes data breach irrelevant, with StrongKey technology, your data becomes worthless to hackers&amp;rdquo; as stated on their website !.
 About the company by CyberDb : StrongAuth, Inc. is a Silicon Valley company focused on Symmetric Key Management, Encryption, Tokenization and PKI and FIDO-based Strong-Authentication.</description>
     </item>
     
     <item>
       <title>From academic research to LFD critical vulnerability</title>
-      <link>https://s1m0x.xyz/post/bugs/lfi-is-calling/</link>
+      <link>https://medblg.top/post/bugs/lfi-is-calling/</link>
       <pubDate>Wed, 21 Oct 2020 12:46:39 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/lfi-is-calling/</guid>
+      <guid>https://medblg.top/post/bugs/lfi-is-calling/</guid>
       <description>Vulnerable discovered code LFI Intro: Three years ago, while conducting my academic research. I come accross a website to download an interresting pdf course.
 I downloaded the pdf, and as always, the nerd come back to mind whenever had the chance, even if it’s not the subject of my research. So, I tried to test the website for what it seems to me a vulnerability. And guess what? it’s a critical one.</description>
     </item>
     
     <item>
       <title>Inside a global leader in CyberSecurity [bitdefender dashboard]</title>
-      <link>https://s1m0x.xyz/post/bugs/bxss-bitdefender/</link>
+      <link>https://medblg.top/post/bugs/bxss-bitdefender/</link>
       <pubDate>Sun, 26 Jan 2020 01:06:41 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/bxss-bitdefender/</guid>
+      <guid>https://medblg.top/post/bugs/bxss-bitdefender/</guid>
       <description>How I was able to access one of the russian antivirus (Bitdefender) domains through blind xss !</description>
     </item>
     
     <item>
       <title>Juicy Infos hidden in js scripts leads to RCE</title>
-      <link>https://s1m0x.xyz/post/bugs/juicy-js-rce/</link>
+      <link>https://medblg.top/post/bugs/juicy-js-rce/</link>
       <pubDate>Sat, 19 Jan 2019 08:00:44 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/juicy-js-rce/</guid>
+      <guid>https://medblg.top/post/bugs/juicy-js-rce/</guid>
       <description>Sorry for the late, I wasn’t able to write this before. Academic exams were overwhelming as usual. Now, I got some time. Let’s start the (story)! One day, while doing my research as usual, I come across a web application that I (want) to test. Just curious, you know when a website pop up and you as usual with your hacker mind spirit want to test, just a small check list will be enough (as it wasn’t your target at first place).</description>
     </item>
     

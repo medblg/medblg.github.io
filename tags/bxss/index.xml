@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bxss on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</title>
-    <link>https://s1m0x.xyz/tags/bxss/</link>
-    <description>Recent content in bxss on s1m0x - IT Enthusiast | CyberSec - DevOps - Devs</description>
+    <title>bxss on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <link>https://medblg.top/tags/bxss/</link>
+    <description>Recent content in bxss on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2020 01:06:41 +0100</lastBuildDate><atom:link href="https://s1m0x.xyz/tags/bxss/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2020 01:06:41 +0100</lastBuildDate><atom:link href="https://medblg.top/tags/bxss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inside a global leader in CyberSecurity [bitdefender dashboard]</title>
-      <link>https://s1m0x.xyz/post/bugs/bxss-bitdefender/</link>
+      <link>https://medblg.top/post/bugs/bxss-bitdefender/</link>
       <pubDate>Sun, 26 Jan 2020 01:06:41 +0100</pubDate>
       
-      <guid>https://s1m0x.xyz/post/bugs/bxss-bitdefender/</guid>
+      <guid>https://medblg.top/post/bugs/bxss-bitdefender/</guid>
       <description>How I was able to access one of the russian antivirus (Bitdefender) domains through blind xss !</description>
     </item>
     
