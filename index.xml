@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <title>MedBlg</title>
     <link>https://medblg.top/</link>
-    <description>Recent content on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
+    <description>Recent content on MedBlg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2022 23:15:11 +0100</lastBuildDate><atom:link href="https://medblg.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fear the EAR Vuln</title>
@@ -43,8 +42,7 @@ I downloaded the pdf, and as always, the nerd come back to mind whenever had the
       <pubDate>Mon, 28 Sep 2020 09:16:08 +0100</pubDate>
       
       <guid>https://medblg.top/about/</guid>
-      <description>$ Whoami Mohamed BAL-GHAUI, a Biomedical Engineer HIT, a PhD student and an InfoSec enthusiast by heart white-hat hacker say! on my spare time I help companies secure their assets, actually your online data. On the Internet, I go by the pseudo name s1m0x1!
-This blog is live so to document my infosec journey, solve CTFs (if have time), and share my own ideas and experiences, and especially keep a good journaling habit.</description>
+      <description>$ Whoami Mohamed Bal-Ghaoui, a PhD candidate in AI with a focus on computer vision tasks in the medical field, a Biomedical Engineer, and InfoSec enthusiast at heart, says, ‘White-hat hacker!’ In my spare time, I enjoy exploring new IT advancements and various topics including Dev, DevOps, OS stuff, and sometimes diving deep into security topics—most importantly, helping companies secure their online assets, which, in turn, means securing your online data!</description>
     </item>
     
     <item>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ear-bug on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <title>ear-bug on MedBlg</title>
     <link>https://medblg.top/tags/ear-bug/</link>
-    <description>Recent content in ear-bug on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
+    <description>Recent content in ear-bug on MedBlg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Mon, 15 Aug 2022 23:15:11 +0100</lastBuildDate><atom:link href="https://medblg.top/tags/ear-bug/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fear the EAR Vuln</title>

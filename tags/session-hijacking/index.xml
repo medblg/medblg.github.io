@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>session-hijacking on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
+    <title>session-hijacking on MedBlg</title>
     <link>https://medblg.top/tags/session-hijacking/</link>
-    <description>Recent content in session-hijacking on MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</description>
+    <description>Recent content in session-hijacking on MedBlg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Sun, 26 Jan 2020 01:06:41 +0100</lastBuildDate><atom:link href="https://medblg.top/tags/session-hijacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inside a global leader in CyberSecurity [bitdefender dashboard]</title>

@@ -1,71 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fear the EAR Vuln | MedBLG - InfoSec Enthusiast | Dev - DevOps - AI</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <title>Fear the EAR Vuln // MedBlg</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Mohamed Bal-Ghaoui" />
+    <meta name="description" content="Easy finding found in private h1 program, not that fancy but could lead to full compromise of the app in question" />
+    <link rel="stylesheet" href="/css/main.min.bb99c7bb7ef1c9e4a63b49835826db0e7028e168be04b007a77a3cebececb2eb.css" />
     
-  
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
+
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://medblg.top/images/ZmVhci10aGUtZWFyCg==.jpeg"/>
+
+<meta name="twitter:title" content="Fear the EAR Vuln"/>
+<meta name="twitter:description" content="Easy finding found in private h1 program, not that fancy but could lead to full compromise of the app in question"/>
+
     <meta property="og:title" content="Fear the EAR Vuln" />
 <meta property="og:description" content="Easy finding found in private h1 program, not that fancy but could lead to full compromise of the app in question" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://medblg.top/post/bugs/fear-the-ear/" />
-<meta property="og:image" content="https://medblg.top/images/ZmVhci10aGUtZWFyCg==.jpeg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://medblg.top/post/bugs/fear-the-ear/" /><meta property="og:image" content="https://medblg.top/images/ZmVhci10aGUtZWFyCg==.jpeg" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-08-15T23:15:11+01:00" />
 <meta property="article:modified_time" content="2022-08-15T23:15:11+01:00" />
 
+
+
   </head>
-
   <body>
-    
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-    </div>  
-    <nav>
-    <ul class="menu">
+    <header class="app-header">
+      <a href="https://medblg.top"><img class="app-header-avatar" src="/images/avatar.jpeg" alt="Mohamed Bal-Ghaoui" /></a>
+      <span class="app-header-title">MedBlg <br>(Mohamed Bal-Ghaoui)</br></span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <span class="txt-description">
+        <p>PhD candidate <br> (AI, InfoSec) enthusiaste </p>
+      </span>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/medblg" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/medblg137" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
       
-      <li><a href="/about">About</a></li>
+  <article class="post">
+    <div class="post-content1">
+      <header class="post-header">
+        <h1 class ="post-title">Fear the EAR Vuln</h1>
+        <div class="post-meta">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+            Aug 15, 2022
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+            4 min read
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+                <a class="tag" href="https://medblg.top/tags/php_sec/">php_sec</a>
+                <a class="tag" href="https://medblg.top/tags/ear-bug/">ear-bug</a>
+          </div>
+        </div>
+
+      </header>
       
-      <li><a href="/">Posts</a></li>
-      
-      <li><a href="/categories">Categories</a></li>
-      
-      <li><a href="/tags">Tags</a></li>
-      
-    </ul>
-
-    <ul class="menu" id="social-links">
-    
-      <li><a href="https://fb.me/simo.balghaoui"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
-
-      <li><a href="https://github.com/medblg"><i class="fa-brands fa-github fa-2xl"></i></a></li>
-
-      <li><a href="https://linkedin.com/in/medblg"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a></li>
-
-    </ul>
-    
-    </div>
-    <hr/>
-    </nav>
-
-<div class="article-meta">
-<h1><span class="title">Fear the EAR Vuln</span></h1>
-
-<h2 class="date">Aug. 15, 2022</h2>
-</div>
-
-
-<main>
-<figure>
-<img class="featured_img" src="/images/ZmVhci10aGUtZWFyCg==.jpeg" width="600px" height="300px"/> </figure>
+      <hr>
+      <div class="post-content">
+        <figure>
+    <img class="featured_img" src="/images/ZmVhci10aGUtZWFyCg==.jpeg" width="600px" height="300px"/> </figure>
 <h2 id="intro">Intro:</h2>
 <p>It has been a while since my last blog post, and here we go again. This one will cover a vulnerability I discovered and reported back in April to a private program in HackerOne which I cannot disclose the name, but it is a well known insurance company in the USA.</p>
 <p>In short I have not set and prepare for this finding as I am so busy recently with my full time job, nevertheless I spend some of my spare time on my hobby, including research.</p>
@@ -79,26 +112,25 @@
 <p>I opened the host on my phone browser, and it redirects me to another subdomain which is the company&rsquo;s Oauth endpoint, this makes sense since the subdomain seems to host something sensitive.</p>
 <p>This time I tried to open the subdomain on my laptop&rsquo;s browser, and I&rsquo;ve noticed the same behavior, the 1st thing I did after was to simply open it in source code view, say: <em>view-source:host</em> while preventing any redirect.</p>
 <p>the source code contains a javascript function that was something similar to this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>script<span style="color:#ff79c6">&gt;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">if</span>( <span style="color:#8be9fd;font-style:italic">window</span>.location.href.indexOf(<span style="color:#f1fa8c">&#34;#access_token&#34;</span>)<span style="color:#ff79c6">&gt;-</span><span style="color:#bd93f9">1</span> <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">window</span>.location.href.indexOf(<span style="color:#f1fa8c">&#34;#code&#34;</span>)<span style="color:#ff79c6">&gt;-</span><span style="color:#bd93f9">1</span> <span style="color:#ff79c6">||</span> <span style="color:#8be9fd;font-style:italic">window</span>.location.href.indexOf(<span style="color:#f1fa8c">&#34;#id_token&#34;</span>)<span style="color:#ff79c6">&gt;-</span><span style="color:#bd93f9">1</span> ) {	
-</span></span><span style="display:flex;"><span>				<span style="color:#8be9fd;font-style:italic">window</span>.location.replace( $actual_link );
-</span></span><span style="display:flex;"><span>			} <span style="color:#ff79c6">else</span> {
-</span></span><span style="display:flex;"><span>				<span style="color:#8be9fd;font-style:italic">var</span> url <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;https://producer-something.redacted.com&#34;</span>;
-</span></span><span style="display:flex;"><span>				url <span style="color:#ff79c6">=</span> url <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;/?option=oauthredirect&amp;app_name=&#39;</span> <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#34;auth0&#34;</span> <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;&amp;redirect_url=&#39;</span> <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#34;https%3A%2F%2Fproducer-something.redacted.com%2Fother-sensitive-content&#34;</span> <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#39;&amp;restrictredirect=true&#39;</span>;
-</span></span><span style="display:flex;"><span>				<span style="color:#8be9fd;font-style:italic">window</span>.location.replace( url );
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">if</span>( window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;#access_token&#34;</span>)<span style="color:#f92672">&gt;-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;#code&#34;</span>)<span style="color:#f92672">&gt;-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#e6db74">&#34;#id_token&#34;</span>)<span style="color:#f92672">&gt;-</span><span style="color:#ae81ff">1</span> ) {	
+</span></span><span style="display:flex;"><span>				window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">replace</span>( <span style="color:#a6e22e">$actual_link</span> );
+</span></span><span style="display:flex;"><span>			} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://producer-something.redacted.com&#34;</span>;
+</span></span><span style="display:flex;"><span>				<span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;/?option=oauthredirect&amp;app_name=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;auth0&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&amp;redirect_url=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;https%3A%2F%2Fproducer-something.redacted.com%2Fother-sensitive-content&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&amp;restrictredirect=true&#39;</span>;
+</span></span><span style="display:flex;"><span>				window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">replace</span>( <span style="color:#a6e22e">url</span> );
 </span></span><span style="display:flex;"><span>			}
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;</span>/script&gt;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
 </span></span></code></pre></div><ul>
 <li>As can be understood from the above code, there was a validation step before redirecting to the Oauth endpoint.</li>
 <li>The condition was only checking if the href attributes contains literally one of the three <code>#access_token</code>, <code>#code</code> and <code>#id_token</code>.</li>
 </ul>
 <p>To test if we can bypass this client-side validation, I simply validated the condition by requesting: <strong><a href="https://producer-something.redacted.com/%7Bone-of-the-three-validation-words-above%7D">https://producer-something.redacted.com/{one-of-the-three-validation-words-above}</a></strong>, this was indeed enough as a bypass, and the content of the host was shown without any issues containing the sensitive data as simple as it sounds.</p>
 <p>It was also possible to bypass the validation by simply deactivating the Javascript through the DevTool, or by using a plugin called <strong>quick javascript switcher</strong></p>
-<figure>
-    <img class="featured_img" src="/images/disable-js-devtool.png" width="400px" height="350px"/> 
-        <figcaption style="margin-top:10px;font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif;color: rgba(117, 117, 117, 1);">
-        devtool
-        </figcaption></figure>
+<div class="center-image">
+    <figure>
+        <img class="post-img" src="/images/disable-js-devtool.png" width="50%" height="30%"/> </figure>
+</div>
 <p>But this isn&rsquo;t practical as all the page contents depend on javascript, so switching off js would actually bypass the restriction but would render nothing.</p>
 <p>And later on I found that any resource can be unlocked using the above keywords, like for instance, requesting <strong>wp-login.php</strong> would redirect to the Oauth first, but appending one of the three keywords wouldn&rsquo;t, <strong>wp-login.php#code</strong> for instance.</p>
 <h2 id="bug-history-and-a-disclosed-report-use-case">Bug history and a disclosed report use-case</h2>
@@ -119,82 +151,14 @@
 <li>Bounty rewarded three days later: Apr 28th.</li>
 </ul>
 
-	
-<a class="tag" href="/tags/php_sec">#php_sec</a>
-	
-<a class="tag" href="/tags/ear-bug">#ear-bug</a>
-
-</main>
-<aside>
-<div class="latest-posts">
-    <h3 style="text-align: center;">
-        Category: 
+      </div>
+      <div class="post-footer">
         
-        <a class="cat" href="/categories/bugs">
-            bugs
-        </a>
-        
-    </h3>
-    <ul>
-        
-            
-            
-       <table>
-            
-            
-            
-        <tr>
-            <th><li style="list-style: none;"><span>Previous</span>: </th><td><a href="https://medblg.top/post/bugs/strongkey-rce/">Struts your way into Strongkey [RCE]</a></li></td>
-            
-        </tr>
-            
-            
-            
-        </table>
-
-    </ul>
-</div>
-</aside>
-<script>
-	window.addEventListener('DOMContentLoaded', () => {
-		const observerForTableOfContentActiveState = new IntersectionObserver(entries => {
-			entries.forEach(entry => {
-				const id = entry.target.getAttribute('id');
-
-				if (entry.intersectionRatio > 0) {					
-					clearActiveStatesInTableOfContents();				
-					document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-				}
-			});
-		});		
-		document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]').forEach((section) => {
-			observerForTableOfContentActiveState.observe(section);
-		});
-
-	});
-
-	function clearActiveStatesInTableOfContents() {
-		document.querySelectorAll('nav li').forEach((section) => {
-			section.classList.remove('active');
-		});
-	}
-</script>
-
-  <footer>
-  
-  
-  </footer>
-  <script>
+      </div>
+    </div>
     
-    window.onscroll = function() {myFunction()};
+  </article>
 
-    function myFunction() {
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
-      document.getElementById("myBar").style.width = scrolled + "%";
-    }
-</script>
+    </main>
   </body>
 </html>
-
